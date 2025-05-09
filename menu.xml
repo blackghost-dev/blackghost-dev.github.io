@@ -10,14 +10,14 @@
 
     <item>
         <title>Servidor 01</title>
-        <link>https://servidor1.com/stream.m3u8</link>
+        <link>https://seusite.com/servidor01.xml</link>
         <thumbnail>https://example.com/tv1.png</thumbnail>
         <info>Servidor Principal</info>
     </item>
 
     <item>
         <title>Servidor 02</title>
-        <link>https://servidor2.com/stream.m3u8</link>
+        <link>https://seusite.com/servidor02.xml</link>
         <thumbnail>https://example.com/tv2.png</thumbnail>
         <info>Servidor Alternativo</info>
     </item>
