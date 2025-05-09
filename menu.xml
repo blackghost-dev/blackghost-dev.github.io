@@ -10,7 +10,7 @@
 
     <item>
         <title>TVSTREAMPRO [++] - TV AO VIVO</title>
-        <link>https://seusite.com/tv_ao_vivo.xml</link>
+        <link>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Channel.xml</link>
         <thumbnail>https://example.com/tv_icon.png</thumbnail>
         <info>Canais de TV ao vivo</info>
     </item>
