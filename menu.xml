@@ -10,7 +10,7 @@
 
     <item>
         <title>Servidor 01</title>
-        <link>https://seusite.com/servidor01.xml</link>
+        <link>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Channel.xml</link>
         <thumbnail>https://example.com/tv1.png</thumbnail>
         <info>Servidor Principal</info>
     </item>
