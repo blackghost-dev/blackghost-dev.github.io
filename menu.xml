@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <items>
     <items_info>
-        <title>TVSTREAMPRO [++]</title>
-        <genre>Menu Principal</genre>
-        <description>Escolha uma categoria para acessar o conteúdo</description>
-        <thumbnail>https://example.com/menu.jpg</thumbnail>
-        <fanart>https://example.com/fanart.jpg</fanart>
+        <title>TVSTREAMPRO [++] - TV AO VIVO</title>
+        <genre>TV</genre>
+        <description>Servidores disponíveis para canais ao vivo</description>
+        <thumbnail>https://example.com/tv_thumbnail.jpg</thumbnail>
+        <fanart>https://example.com/tv_fanart.jpg</fanart>
     </items_info>
 
     <item>
-        <title>TVSTREAMPRO [++] - TV AO VIVO</title>
-        <link>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Channel.xml</link>
-        <thumbnail>https://example.com/tv_icon.png</thumbnail>
-        <info>Canais de TV ao vivo</info>
+        <title>Servidor 01</title>
+        <link>https://servidor1.com/stream.m3u8</link>
+        <thumbnail>https://example.com/tv1.png</thumbnail>
+        <info>Servidor Principal</info>
     </item>
 
     <item>
-        <title>TVSTREAMPRO [++] - FILMES</title>
-        <link>https://seusite.com/filmes.xml</link>
-        <thumbnail>https://example.com/movies_icon.png</thumbnail>
-        <info>Filmes em HD</info>
-    </item>
-
-    <item>
-        <title>TVSTREAMPRO [++] - SÉRIES</title>
-        <link>https://seusite.com/series.xml</link>
-        <thumbnail>https://example.com/series_icon.png</thumbnail>
-        <info>Séries completas</info>
+        <title>Servidor 02</title>
+        <link>https://servidor2.com/stream.m3u8</link>
+        <thumbnail>https://example.com/tv2.png</thumbnail>
+        <info>Servidor Alternativo</info>
     </item>
 </items>
