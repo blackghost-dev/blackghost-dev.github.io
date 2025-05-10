@@ -1,23 +1,10 @@
-<item>
-<title>TVSTREAMPRO [++] || GLOBO SUDESTE</title>
-<link>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Canais/Globosudeste</link>
-<thumbnail>https://seusite.com/imagens/globo-sudeste.jpg</thumbnail>
-<fanart>https://seusite.com/fanarts/globo-fanart.jpg</fanart>
-<info>Globo Sudeste ao vivo – programação local e nacional.</info>
-</item>
+<layouttype>thumbnail</layouttype>
 
-<item>
-<title>TVSTREAMPRO [++] || RECORD SP</title>
-<link>https://stream.recordsp.m3u8</link>
-<thumbnail>https://seusite.com/imagens/record-sp.jpg</thumbnail>
-<fanart>https://seusite.com/fanarts/record-fanart.jpg</fanart>
-<info>Record São Paulo – jornalismo, novelas e entretenimento.</info>
-</item>
-
-<item>
-<title>TVSTREAMPRO [++] || BAND RJ - Link .ts</title>
-<link>plugin://plugin.video.f4mTester/?url=https://stream.band-rj.ts</link>
-<thumbnail>https://seusite.com/imagens/band-rj.jpg</thumbnail>
-<fanart>https://seusite.com/fanarts/band-fanart.jpg</fanart>
-<info>Band Rio de Janeiro – programação regional e esportes.</info>
-</item>
+<channels>
+<channel>
+<name>[B][COLOR lime]●[/COLOR] [COLOR white]TVSTREAMPRO[++] - TV AO VIVO[/COLOR][/B]</name>
+<thumbnail>https://images-na.ssl-images-amazon.com/images/I/410O56DAkyL.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Canais/Globosudeste</externallink>
+<fanart>https://imirante.com/imagens/2017/12/20/1513791715-298011502-810x471.jpg</fanart>
+<info>portugalkodi.com</info>
+</channel>
