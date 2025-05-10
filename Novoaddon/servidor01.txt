@@ -868,4 +868,4 @@ plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://saga10.pro:80/li
 #EXTINF:-1 tvg-id="" tvg-name="CAZE 6 FHD" tvg-logo="https://www.imagensempng.com.br/wp-content/uploads/2023/08/2372.png" group-title="CANAIS | CAZE TV",CAZE 6 FHD
 plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://saga10.pro:80/live/015188/fu@sionp2@/3878343.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="NFL FHD" tvg-logo="https://a4.espncdn.com/combiner/i?img=/i/espn/misc_logos/500/nfl.png" group-title="CANAIS ESPORTES",NFL FHD
-plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://saga10.pro:80/live/015188/fu@sionp2@/3880055.m3u8
+plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://saga10.pro:80/live/015188/fu@sionp2@/3880055.m3u8
