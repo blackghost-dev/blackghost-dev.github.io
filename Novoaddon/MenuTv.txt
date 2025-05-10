@@ -1,7 +1,7 @@
 
 <canal>
 <canais>
-<name>[COLOR white][B]TVSTREAMPRO[++] [COLOR cyan][B] SERVIDOR 01 :[/B][/COLOR] [COLOR red][B]NÃƒO PRECISA DE F4MTESTER[/B][/COLOR]</name>
+<name>[COLOR white][B]TVSTREAMPRO[++] [COLOR cyan][B] SERVIDOR 01 :[/B][/COLOR] [COLOR red][B]PRECISA UTILIZAR O F4MTESTER[/B][/COLOR]</name>
 <thumbnail>https://s2.glbimg.com/tlep5p2NbWU-ukSGT7eK_Sho6c4=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/po/tt2/f/original/2015/06/01/tv980.jpg</thumbnail>
 <fanart>https://i1.wp.com/assets.propmark.com.br/uploads/2020/03/iStock-1055709516-1-scaled.jpg?fit=2560%2C1707&ssl=1</fanart>
 <link>http://ignoreme</link>
