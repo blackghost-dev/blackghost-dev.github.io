@@ -1,0 +1,23 @@
+<item>
+<title>TVSTREAMPRO [++] || GLOBO SUDESTE</title>
+<link>https://stream.globo-sudeste.m3u8|User-Agent=ExoMedia</link>
+<thumbnail>https://seusite.com/imagens/globo-sudeste.jpg</thumbnail>
+<fanart>https://seusite.com/fanarts/globo-fanart.jpg</fanart>
+<info>Globo Sudeste ao vivo – programação local e nacional.</info>
+</item>
+
+<item>
+<title>TVSTREAMPRO [++] || RECORD SP</title>
+<link>https://stream.recordsp.m3u8</link>
+<thumbnail>https://seusite.com/imagens/record-sp.jpg</thumbnail>
+<fanart>https://seusite.com/fanarts/record-fanart.jpg</fanart>
+<info>Record São Paulo – jornalismo, novelas e entretenimento.</info>
+</item>
+
+<item>
+<title>TVSTREAMPRO [++] || BAND RJ - Link .ts</title>
+<link>plugin://plugin.video.f4mTester/?url=https://stream.band-rj.ts</link>
+<thumbnail>https://seusite.com/imagens/band-rj.jpg</thumbnail>
+<fanart>https://seusite.com/fanarts/band-fanart.jpg</fanart>
+<info>Band Rio de Janeiro – programação regional e esportes.</info>
+</item>
