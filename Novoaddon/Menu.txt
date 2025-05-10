@@ -19,7 +19,7 @@
 <thumbnail>https://imgur.com/ZlGUVTx.jpg</thumbnail>
 <fanart>https://imgur.com/ApuEiY3.jpg</fanart>
 <link>http://ignoreme</link>
-<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/tvaovivo/MenuTVaoVIVO.txt</externallink>
+<externallink>https://raw.githubusercontent.com/blackghost-dev/blackghost-dev.github.io/refs/heads/master/Novoaddon/MenuTv.txt</externallink>
 <info>[COLOR branco][B]Sua Tv Na Caxinha[/B][/COLOR]</info>
 </canal>
 </canais>
