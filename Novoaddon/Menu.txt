@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutype>lista</layoutype>
+ 
+<canais>
+<canal>
+<name>[COLOR white][B]Bem Vindo [COLOR orange][B]- [COLOR sylver][B] Ao ADDON!![/B][/COLOR]</name>
+<thumbnail>https://imgur.com/PiNgxsI.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3</fanart>
+<link>http://ignoreme</link>
+<externallink>https://pastebin.com/raw/wbfgFe9E</externallink>
+<info>[COLOR white][B]Fique em casa!![/B][/COLOR]</info>
+</canal>
+</canais>
+
+ 
+<canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] Canais ao VIVO  [/B][/COLOR][COLOR yellow][B] â– [/B][/COLOR]</name>
+<thumbnail>https://imgur.com/ZlGUVTx.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/tvaovivo/MenuTVaoVIVO.txt</externallink>
+<info>[COLOR branco][B]Sua Tv Na Caxinha[/B][/COLOR]</info>
+</canal>
+</canais>
+ 
+ 
+
+<canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] FORMIGAtv BBB 25 [/B][/COLOR][COLOR yellow][B] â– [/B][/COLOR]</name>
+<thumbnail>https://www.dci.com.br/wp-content/uploads/2025/01/bbb-9.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/Menu/MenuBBB25.txt</externallink>
+<info>[COLOR branco][B]Jogos AO VIVO do Dia[/B][/COLOR]</info>
+</canal>
+</canais>
+  
+ 
+ 
+<canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] FORMIGAFlix [COLOR green][B]MANUTENÃ‡AO [/B][/COLOR][COLOR red][B] â– [/B][/COLOR]</name>
+<thumbnail>https://imgur.com/rf74VsG.jpg</thumbnail>
+<fanart>https://grupoalltec.com.br/wp-content/uploads/2021/06/009.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/Menu/formigaflix.txt</externallink>
+<info>[COLOR white][B]EM MANUTENÃ‡ÃƒO[/B][/COLOR]</info>
+</canal>
+</canais>
+ 
+ 
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] Desenhos 24hs [/B][/COLOR][COLOR green][B] â– [/B][/COLOR]</name>
+<thumbnail>https://imgur.com/zy1qPmy.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/24hs/Canais24hs.txt</externallink>
+<info>[COLOR branco][B]FORMIGAtv 24hs.[/B][/COLOR]</info>
+</canal>
+</canais>
+ 
+ 
+ 
+ 
+ 
+<canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] Novelas [/B][/COLOR][COLOR green][B] â– [/B][/COLOR]</name>
+<thumbnail>https://imgur.com/WBrIQZF.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/Novelas/MenuNovelas.txt</externallink>
+<info>[COLOR white][B]Disponivel no Face Oficial FORMIGAtv[/B][/COLOR]</info>
+</canal>
+</canais>
+
+  
+<canais>
+<canal>
+<name>[COLOR white][B]CURSOS[COLOR orange][B]- [COLOR sylver][B] EM DESENVOLVIMENTO!![/B][/COLOR]</name>
+<thumbnail>https://imgur.com/PiNgxsI.jpg</thumbnail>
+<fanart>https://imgur.com/ApuEiY3</fanart>
+<link>http://ignoreme</link>
+<externallink>https://pastebin.com/raw/wbfgFe9E</externallink>
+<info>[COLOR white][B]Fique em casa!![/B][/COLOR]</info>
+</canal>
+</canais>
+  
+<canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] Caixa [COLOR black][B]PRETA [/B][/COLOR]</name>
+<thumbnail>http://getwallpapers.com/wallpaper/full/f/b/4/1104336-scream-wallpaper-2000x1500-for-computer.jpg</thumbnail>
+<fanart>https://www.hdwallpapers.in/download/vr_isolation_4k-2560x1440.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/addonformiga/Menu/CXP.txt</externallink>
+<info>[COLOR white][B]ELa pode estar aberta ou fechada,Entre sÃ³ se Tiver Coragem[/B][/COLOR]</info>
+</canal>
+</canais>
+ 
+
+ <canais>
+<canal>
+<name>[COLOR green][B]â—[/B][/COLOR][COLOR white][B] Faca sua DoaÃ§Ãµes ou compre uma de nossas LISTAS apartir de 19,99  [COLOR orange][B] Ajude a Manter o addon [/B][/COLOR]</name>
+<thumbnail>https://imgur.com/m34Wu06.jpg</thumbnail>
+<fanart>https://imgur.com/m34Wu06.jpg</fanart>
+<link>http://ignoreme</link>
+<externallink>https://s3.us-west-1.wasabisys.com/apkformiga/Novo%20projeto.mp4</externallink>
+<info>[COLOR white][B]Aquira nossa Lista apartir de 19,99 com varios servidores incluindo canais Portugal e EUA,comprando nossas lista voce ajuda a manter o projeto FORMIGAtv,NOSSA lISTA Ã‰ COMPATIVEL COM TODOS OS DISPOSITIVOS ,INCLUINDO TV SMART LG E SAMSUNG[/B][/COLOR]</info>
+</canal>
+</canais>
+
