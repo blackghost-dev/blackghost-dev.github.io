@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="A&E FHD" tvg-logo="https://imagizer.imageshack.com/v2/640x480q90/922/u4dadg.png" group-title="CANAIS FILMES E SERIES",A&E FHD
+plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://saga10.pro:80/live/015188/fu@sionp2@/2639888.m3u8
