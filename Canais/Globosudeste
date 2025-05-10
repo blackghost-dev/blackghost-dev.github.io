@@ -1,0 +1,10 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="TVSTREAMPRO[++]" tvg-name="GLOBO SP CAPITAL FHD" tvg-logo="https://w7.pngwing.com/pngs/452/30/png-transparent-rede-globo-globo-tv-international-grupo-globo-television-globosat-jato-television-broadcasting-television-channel-thumbnail.png" group-title="CANAIS GLOBO SUDESTE",GLOBO SP CAPITAL FHD
+http://saga10.pro:80/live/015188/fu@sionp2@/2639793.m3u8
+#EXTINF:-1 tvg-id="TVSTREAMPRO[++]" tvg-name="GLOBO SP EPTV CAMPINAS FHD" tvg-logo="https://w7.pngwing.com/pngs/452/30/png-transparent-rede-globo-globo-tv-international-grupo-globo-television-globosat-jato-television-broadcasting-television-channel-thumbnail.png" group-title="CANAIS GLOBO SUDESTE",GLOBO SP EPTV CAMPINAS FHD
+http://saga10.pro:80/live/015188/fu@sionp2@/2639796.m3u8
+#EXTINF:-1 tvg-id="TVSTREAMPRO[++]" tvg-name="GLOBO SP EPTV CENTRAL S CARLOS FHD" tvg-logo="https://w7.pngwing.com/pngs/452/30/png-transparent-rede-globo-globo-tv-international-grupo-globo-television-globosat-jato-television-broadcasting-television-channel-thumbnail.png" group-title="CANAIS GLOBO SUDESTE",GLOBO SP EPTV CENTRAL S CARLOS FHD
+http://saga10.pro:80/live/015188/fu@sionp2@/2639799.m3u8
+#EXTINF:-1 tvg-id="TVSTREAMPRO[++]" tvg-name="GLOBO SP EPTV RIBEIRÃO PRETO FHD" tvg-logo="https://w7.pngwing.com/pngs/452/30/png-transparent-rede-globo-globo-tv-international-grupo-globo-television-globosat-jato-television-broadcasting-television-channel-thumbnail.png" group-title="CANAIS GLOBO SUDESTE",GLOBO SP EPTV RIBEIRÃO PRETO FHD
+http://saga10.pro:80/live/015188/fu@sionp2@/2639802.m3u8
