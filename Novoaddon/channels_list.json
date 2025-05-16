@@ -81,7 +81,7 @@
     },
     {
         "title": "[B][COLOR yellow]TVSTREAMPRO[++][/COLOR][/B] - [B][COLOR cyan]AXN FHD H265[/COLOR][/B]",
-        "url": "http://http-www-gfcld-001.gfhostcdn.com:80/play/fYEtPMU1rovydT14v9MP5-EfSfWMI2FbbapHzQ4Xd0U/m3u8",
+        "url": "plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url=http://http-www-gfcld-001.gfhostcdn.com:80/play/fYEtPMU1rovydT14v9MP5-EfSfWMI2FbbapHzQ4Xd0U/m3u8",
         "image": "http://www.fontedoscanais.com/logos/canais/axn.png"
     },
     {
