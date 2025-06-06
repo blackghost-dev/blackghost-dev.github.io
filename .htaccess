@@ -1,0 +1,74 @@
+<FilesMatch "^(?!update/).*\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^update/.*\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch ".*\.(sqlite3|sqlite|db)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "info_*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "listas.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "proxy_get.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "proxy_post.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "proxy_post_json.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "dns_resolver.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "hls.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "ping.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "bot.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "listas_stalker.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "cookies.txt">
+    Order Deny,Allow
+    Deny from all
+</Files>

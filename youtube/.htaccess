@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /youtube
+
+RewriteRule ^video/(.*).m3u8 hls.php?v=$1 [B]
