@@ -8,11 +8,20 @@ const repoInfo = {
 async function carregarUsuarios() {
   const token = document.getElementById('token').value;
   if (!token) { alert('Informe o token!'); return; }
+
   const url = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/${repoInfo.path}`;
   const resp = await fetch(url, {
-    headers: { Authorization: 'token ' + token }
+    headers: {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json'
+    }
   });
-  if (!resp.ok) { alert('Erro ao carregar. Confira o token e permissões.'); return; }
+
+  if (!resp.ok) {
+    alert('Erro ao carregar. Confira o token e permissões.');
+    return;
+  }
+
   const data = await resp.json();
   const content = atob(data.content);
   const json = JSON.parse(content);
@@ -38,6 +47,7 @@ function mostrarUsuarios(usuarios) {
 async function salvarUsuarios() {
   const token = document.getElementById('token').value;
   if (!token) { alert('Informe o token!'); return; }
+
   const usuarios = [];
   document.querySelectorAll('#usuariosContainer > div').forEach(div => {
     usuarios.push({
@@ -48,23 +58,34 @@ async function salvarUsuarios() {
       lista_url: div.querySelector('.lista').value
     });
   });
+
   const contentStr = JSON.stringify({ usuarios }, null, 2);
   const contentBase64 = btoa(contentStr);
 
-  // Obter sha do arquivo atual para atualizar
   const url = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/${repoInfo.path}`;
+
+  // Buscar SHA
   const getResp = await fetch(url, {
-    headers: { Authorization: 'token ' + token }
+    headers: {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json'
+    }
   });
-  if (!getResp.ok) { alert('Erro ao buscar arquivo para atualização.'); return; }
+
+  if (!getResp.ok) {
+    alert('Erro ao buscar arquivo para atualização.');
+    return;
+  }
+
   const getData = await getResp.json();
   const sha = getData.sha;
 
   // Atualizar o arquivo
   const putResp = await fetch(url, {
     method: 'PUT',
-    headers: { 
+    headers: {
       'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
@@ -73,6 +94,7 @@ async function salvarUsuarios() {
       sha: sha
     })
   });
+
   if (putResp.ok) alert('Usuários salvos com sucesso!');
   else alert('Erro ao salvar usuários.');
 }
