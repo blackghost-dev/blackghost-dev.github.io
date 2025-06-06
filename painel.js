@@ -1,7 +1,7 @@
 // Exemplo simples de código para carregar e salvar usuários no GitHub
 const repoInfo = {
-  owner: "SEU_USUARIO_GITHUB",
-  repo: "SEU_REPO",
+  owner: "blackghost-dev",
+  repo: "blackghost-dev.github.io", // repositório raiz do Pages
   path: "usuarios.json"
 };
 
