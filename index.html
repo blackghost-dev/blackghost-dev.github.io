@@ -1,17 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Painel VIP Kodi</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Painel VIP Kodi</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #loginSection, #painelSection { max-width: 600px; margin: auto; }
+    #usuariosContainer div { margin-bottom: 10px; }
+    input { margin: 3px; padding: 5px; width: 150px; }
+    button { padding: 5px 10px; margin: 5px; }
+  </style>
 </head>
 <body>
-<h1>Painel VIP Kodi</h1>
-<p>Use seu token do GitHub para carregar e salvar usuários VIP.</p>
-<input type="text" id="token" placeholder="Token do GitHub" />
-<button onclick="carregarUsuarios()">Carregar Usuários do GitHub</button>
-<button onclick="salvarUsuarios()">Salvar no GitHub</button>
-<div id="usuariosContainer"></div>
-<script src="painel.js"></script>
+
+  <div id="loginSection">
+    <h2>Painel VIP Kodi - Login</h2>
+    <input id="token" type="password" placeholder="Coloque seu token do GitHub" style="width: 400px;" />
+    <button onclick="login()">Login</button>
+    <p id="loginMsg" style="color: red;"></p>
+  </div>
+
+  <div id="painelSection" style="display:none;">
+    <h2>Usuários VIP</h2>
+    <div id="usuariosContainer"></div>
+    <button onclick="adicionarUsuario()">Adicionar Usuário</button>
+    <button onclick="salvarUsuarios()">Salvar no GitHub</button>
+    <button onclick="logout()">Sair</button>
+    <p id="saveMsg" style="color: green;"></p>
+  </div>
+
+  <script>
+    const repoInfo = {
+      owner: "blackghost-dev",
+      repo: "blackghost-dev.github.io",
+      path: "usuarios.json"
+    };
+    let globalToken = '';
+
+    function login() {
+      globalToken = document.getElementById('token').value.trim();
+      if (!globalToken) {
+        document.getElementById('loginMsg').innerText = 'Informe o token!';
+        return;
+      }
+      document.getElementById('loginMsg').innerText = 'Validando token...';
+
+      // Tenta carregar usuários para validar o token
+      fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/${repoInfo.path}`, {
+        headers: {
+          'Authorization': 'token ' + globalToken,
+          'Accept': 'application/vnd.github.v3+json'
+        }
+      })
+      .then(resp => {
+        if (!resp.ok) throw new Error('Token inválido ou sem permissão.');
+        return resp.json();
+      })
+      .then(data => {
+        const content = atob(data.content);
+        const json = JSON.parse(content);
+        mostrarUsuarios(json.usuarios);
+        document.getElementById('loginSection').style.display = 'none';
+        document.getElementById('painelSection').style.display = 'block';
+        document.getElementById('loginMsg').innerText = '';
+      })
+      .catch(err => {
+        document.getElementById('loginMsg').innerText = err.message;
+      });
+    }
+
+    function mostrarUsuarios(usuarios) {
+      const container = document.getElementById('usuariosContainer');
+      container.innerHTML = '';
+      usuarios.forEach((u, i) => {
+        const div = document.createElement('div');
+        div.dataset.index = i;
+        div.innerHTML = `
+          <input placeholder="Usuário" value="${u.usuario}" class="usuario" />
+          <input placeholder="Senha" value="${u.senha}" class="senha" />
+          <input placeholder="VIP (true/false)" value="${u.vip}" class="vip" />
+          <input placeholder="Expira em (YYYY-MM-DD)" value="${u.expira_em}" class="expira" />
+          <input placeholder="URL da lista M3U" value="${u.lista_url}" class="lista" />
+          <button onclick="removerUsuario(${i})">Remover</button>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function adicionarUsuario() {
+      const container = document.getElementById('usuariosContainer');
+      const div = document.createElement('div');
+      div.dataset.index = container.children.length;
+      div.innerHTML = `
+        <input placeholder="Usuário" class="usuario" />
+        <input placeholder="Senha" class="senha" />
+        <input placeholder="VIP (true/false)" class="vip" />
+        <input placeholder="Expira em (YYYY-MM-DD)" class="expira" />
+        <input placeholder="URL da lista M3U" class="lista" />
+        <button onclick="removerUsuario(${container.children.length})">Remover</button>
+      `;
+      container.appendChild(div);
+    }
+
+    function removerUsuario(index) {
+      const container = document.getElementById('usuariosContainer');
+      if (container.children[index]) {
+        container.removeChild(container.children[index]);
+        // Reajusta os data-index e botões para remover
+        [...container.children].forEach((div, i) => {
+          div.dataset.index = i;
+          div.querySelector('button').setAttribute('onclick', `removerUsuario(${i})`);
+        });
+      }
+    }
+
+    async function salvarUsuarios() {
+      const container = document.getElementById('usuariosContainer');
+      const usuarios = [];
+      container.querySelectorAll('div').forEach(div => {
+        usuarios.push({
+          usuario: div.querySelector('.usuario').value.trim(),
+          senha: div.querySelector('.senha').value.trim(),
+          vip: div.querySelector('.vip').value.trim() === 'true',
+          expira_em: div.querySelector('.expira').value.trim(),
+          lista_url: div.querySelector('.lista').value.trim()
+        });
+      });
+
+      const contentStr = JSON.stringify({ usuarios }, null, 2);
+      const contentBase64 = btoa(unescape(encodeURIComponent(contentStr))); // suporte a UTF-8
+
+      try {
+        // Pega SHA do arquivo atual para atualização
+        const url = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/${repoInfo.path}`;
+        const getResp = await fetch(url, {
+          headers: { 'Authorization': 'token ' + globalToken }
+        });
+        if (!getResp.ok) throw new Error('Erro ao buscar arquivo para atualização.');
+        const getData = await getResp.json();
+        const sha = getData.sha;
+
+        // Atualiza arquivo
+        const putResp = await fetch(url, {
+          method: 'PUT',
+          headers: {
+            'Authorization': 'token ' + globalToken,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            message: "Atualização via painel VIP",
+            content: contentBase64,
+            sha: sha
+          })
+        });
+
+        if (putResp.ok) {
+          document.getElementById('saveMsg').style.color = 'green';
+          document.getElementById('saveMsg').innerText = 'Usuários salvos com sucesso!';
+        } else {
+          throw new Error('Erro ao salvar usuários.');
+        }
+      } catch (e) {
+        document.getElementById('saveMsg').style.color = 'red';
+        document.getElementById('saveMsg').innerText = e.message;
+      }
+    }
+
+    function logout() {
+      globalToken = '';
+      document.getElementById('painelSection').style.display = 'none';
+      document.getElementById('loginSection').style.display = 'block';
+      document.getElementById('token').value = '';
+      document.getElementById('usuariosContainer').innerHTML = '';
+      document.getElementById('loginMsg').innerText = '';
+      document.getElementById('saveMsg').innerText = '';
+    }
+  </script>
+
 </body>
 </html>
